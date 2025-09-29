@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montar Currículo — EstágioVerde</title>
+  <link rel="stylesheet" href="style.css"> <!-- usa o mesmo CSS do site -->
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="assets/logo.png" alt="Logo Estágio Verde">
+  </div>
+
+  <!-- Botões de cadastro à esquerda -->
+  <div class="header-left">
+    <button class="btn-link" onclick="openPopup('aluno-login')">Cadastro Aluno</button>
+    <button class="btn-link" onclick="openPopup('empresa-login')">Cadastro Empresa</button>
+  </div>
+
+  <!-- Menu principal à direita -->
+  <nav class="header-right">
+    <a href="index.html">Início</a>
+    <a href="vagas.html">Vagas</a>
+    <a href="empresas.html">Empresas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <!-- Botão voltar -->
+  <a href="index.html" class="back-btn">&#8592; Voltar</a>
+
+  <div class="curriculo-box">
+    <h2>Monte seu currículo:</h2>
+    <form>
+      <input class="input" type="text" placeholder="Nome" required>
+      <input class="input" type="date" placeholder="Data de nascimento" required>
+      <input class="input" type="text" placeholder="Endereço" required>
+      <input class="input" type="tel" placeholder="Telefone" required>
+      <input class="input" type="email" placeholder="E-mail" required>
+      <input class="input" type="url" placeholder="Links: (GitHub / LinkedIn)">
+
+      <textarea class="input" placeholder="Formação acadêmica" rows="3" required></textarea>
+      <textarea class="input" placeholder="Experiência profissional" rows="3" required></textarea>
+
+      <button class="btn" type="submit">Postar</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-wrap">
+    <div>
+      <h4>Institucional</h4>
+      <a href="#">Sobre</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <a href="mailto:contato@estagioverde.com">Email</a>
+      <a href="#">Telefone</a>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+  <p class="copy">© 2025 START ESTAGIO — Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

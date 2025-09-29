@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Vagas</title>
+  <link rel="stylesheet" href="style.css"> <!-- usa o mesmo CSS do site -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="assets/logo.png" alt="Logo Estágio Verde">
+  </div>
+
+  <!-- Botões de cadastro à esquerda -->
+  <div class="header-left">
+    <button class="btn-link" onclick="openPopup('aluno-login')">Cadastro Aluno</button>
+    <button class="btn-link" onclick="openPopup('empresa-login')">Cadastro Empresa</button>
+  </div>
+
+  <!-- Menu principal à direita -->
+  <nav class="header-right">
+    <a href="index.html">Início</a>
+    <a href="vagas.html">Vagas</a>
+    <a href="empresas.html">Empresas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <!-- Botão voltar -->
+  <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+
+  <div class="curriculo-box">
+    <h2>Cadastro de Empresa:</h2>
+    <form>
+      <input class="input" type="text" placeholder="Nome da Empresa" required>
+      <input class="input" type="text" placeholder="Local" required>
+      <input class="input" type="text" placeholder="Tipo de vaga" required>
+      <input class="input" type="text" placeholder="Área" required>
+      <input class="input" type="text" placeholder="Nível" required>
+      <textarea class="input" placeholder="Descrição da vaga" rows="3" required></textarea>
+
+      <button class="btn" type="submit">Cadastrar</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-wrap">
+    <div>
+      <h4>Institucional</h4>
+      <a href="#">Sobre</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <a href="mailto:contato@estagioverde.com">Email</a>
+      <a href="#">Telefone</a>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+  <p class="copy">© 2025 START ESTAGIO — Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
